@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
+
+body{
+  margin:0px;
+  padding: 0px;
+  background-color: #E0FBFC;
+}
+ul{
+  padding: 0px;
+  margin:0px;
+}
+
+.container{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.button_1{
+  height:38px;
+  background:#EE6C4D;
+  border:0;
+  font-family: monospace;
+  padding-left: 20px;
+  padding-right:20px;
+  color:#eee;
+  cursor: pointer;
+}
+.button_1:active{
+  color:#293241;
+  background:#98C1D9;
+}
+.yin{
+  color: #293241;
+}
+.yang{
+  background-color: #293241;
+  color: #E0FBFC;
+  padding:10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/* Header */
+
+header{
+  width: 100%;
+  background-color: #293241;
+  min-height: 70px;
+  border-bottom: 4px solid  #EE6C4D;
+  color:#98C1D9;
+}
+header #logo{
+  font-family:'Chelsea Market';
+  float:left;
+}
+header li{
+  display:inline;
+  float:left;
+  padding: 0px 20px 0px 20px;
+}
+header li a{
+  text-decoration: none;
+  font-size: 18px;
+  text-transform:lowercase;
+  font-family: monospace;
+  color: #E0FBFC;
+  font-weight: bolder;
+}
+header nav{
+  float:right;
+  margin-top:30px;
+}
+#orange{
+  color: #EE6C4D;
+}
+header a:hover{
+  color:#EE6C4D ;
+
+}
+
+/*Showcase*/
+#showcase{
+  background-image: url("../img/background.jpg");
+  text-align:center;
+  min-height: 425px;
+  background-position:right;
+  background-repeat: no-repeat;
+  border-bottom: 4px solid #EE6C4D;
+}
+
+#showcase h1{
+  margin-top: 100px;
+  margin-bottom: 50px;
+  font-size: 50px;
+  color:#E0FBFC;
+  font-family: 'Balsamiq Sans',cursive;
+}
+#showcase p{
+  font-size:20px;
+  color:#E0FBFC;
+  font-family: 'Balsamiq Sans',cursive;
+}
+
+/*newsletter*/
+#news{
+  background-color: #293241;
+}
+#news h4{
+  float:left;
+  font-size:18px;
+  font-family: 'Balsamiq Sans',cursive;
+  color:#EE6C4D;
+}
+#news form{
+  float:right;
+  margin-top:15px;
+}
+#news form input{
+  padding:4px;
+  height:25px;
+  width:250px;
+  margin-bottom:5px;
+  font-family: monospace;
+}
+
+/*Boxes*/
+
+#boxes{
+  padding:10px;
+}
+#boxes .box{
+  text-align: center;
+  float:left;
+  width: 30%;
+  padding: 10px;
+}
+#boxes .box img{
+  width: 100px;
+}
+#boxes h3{
+  font-size: 25px;
+  font-family:sans-serif;
+  color: #293241;
+}
+#boxes p{
+  color:#333;
+  font-size: 16px;
+}
+
+/* Footer */
+
+footer{
+  background-color: #EE6C4D;
+  padding:15px;
+  margin-top:15px;
+  text-align: center;
+}
+footer p{
+  font-size:17px;
+  color:#E0FBFC;
+  font-family:sans-serif;
+}
+
+#main{
+  padding:30px;
+  font-family:serif;
+}
+#main p{
+  font-size:18px;
+}
+#main h1{
+  font-size:25px;
+}
+.main-content{
+  float: left;
+  width: 60%;
+  padding:10px;
+
+}
+aside{
+  display: block;
+}
+
+.services{
+  background-color: #98C1D9;
+  padding: 5px 10px 5px 15px;
+  border: 1px solid gray;
+  margin-bottom: 15px;
+}
+#sidebar1{
+  width: 30%;
+  float: right;
+}
+#quote-form{
+  padding: 10px;
+}
+#quote-form > button{
+  display: block;
+  width: 100%;
+}
+#quote-form > input{
+  display: block;
+  font-size: 16px;
+  margin-bottom:10px;
+  width: 100%;
+}
+
+#quote-form > textarea {
+  width:100%;
+  height:80px;
+  resize:vertical;
+  max-height: 80px;
+  min-height: 80px;
+  margin-bottom:15px;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (max-width:785px) {
+  header #logo,header nav, header nav ul li, #news h4, #news form{
+    float: none;
+    text-align: center;
+    margin-bottom:10px;
+  }
+  #boxes .box,aside#sidebar1, .main-content{
+    float:none;
+    width: 100%;
+    margin-top:15px;
+    display:inline-block;
+  }
+
+}
